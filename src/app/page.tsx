@@ -23,7 +23,7 @@ export default function Home() {
       {/* 2. THE HEADLINE */}
       <div className="space-y-6">
         <div className="inline-flex items-center rounded-full border border-yellow-500/20 bg-yellow-500/10 px-4 py-1.5 text-sm font-medium text-yellow-500">
-          <Sparkles className="mr-2 h-4 w-4" /> Coming Soon to Sri Lanka
+          <Sparkles className="mr-2 h-4 w-4" /> Coming Soon to SriLanka
         </div>
         
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-7xl">
