@@ -33,19 +33,31 @@ export default function Home() {
           </span>
         </h1>
 
-        {/* UPDATED TEXT SECTION */}
         <p className="mx-auto max-w-xl text-lg text-gray-400 leading-relaxed">
           The perfect gift doesn't fade. <br/>
           Give them a masterpiece that shines forever.
         </p>
       </div>
 
-      {/* 3. SOCIAL LINKS */}
+      {/* 3. SOCIAL LINKS (UPDATED) */}
       <div className="mt-12 flex gap-8 text-gray-600">
-        <a href="#" className="hover:text-yellow-500 hover:scale-110 transition-all duration-300">
+        {/* Instagram Link */}
+        <a 
+          href="https://www.instagram.com/giftlanka2025/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-yellow-500 hover:scale-110 transition-all duration-300"
+        >
             <Instagram className="h-8 w-8" />
         </a>
-        <a href="#" className="hover:text-yellow-500 hover:scale-110 transition-all duration-300">
+
+        {/* Facebook Link */}
+        <a 
+          href="https://www.facebook.com/share/1D1LEaW2jt/?mibextid=wwXIfr" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="hover:text-yellow-500 hover:scale-110 transition-all duration-300"
+        >
             <Facebook className="h-8 w-8" />
         </a>
       </div>
