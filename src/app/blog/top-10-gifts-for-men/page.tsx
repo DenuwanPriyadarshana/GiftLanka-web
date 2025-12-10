@@ -16,7 +16,7 @@ export default function ArticlePage() {
         </h1>
         
         <div className="flex items-center gap-4 text-sm text-gray-500 border-b border-neutral-800 pb-8 mb-8 font-mono">
-          <span>Dec 10, 2025</span> • <span>By The Curator</span> • <span>5 Min Read</span>
+          <span>Dec 10, 2025</span> • <span>By The Curator</span> • <span>Top 10 For Him</span>
         </div>
 
         {/* INTRO */}
@@ -39,7 +39,6 @@ export default function ArticlePage() {
             <p className="mb-4">
               In an epoch where memories are imprisoned within the fragile glass of cellular telephones, there exists a noble rebellion in the act of giving physical permanence to a moment. We speak here of the <strong>Metal Print</strong>. Unlike the paper of old, these images are infused by fire into sheets of aluminum.
             </p>
-            {/* Curator's Note (Instead of a Button) */}
             <div className="mt-4 bg-neutral-900/50 p-4 border-l-2 border-yellow-500 text-sm text-gray-400 italic">
                "Coming Soon: GiftLanka's own studio is currently being prepared to bring this craft to Colombo."
             </div>
@@ -78,7 +77,16 @@ export default function ArticlePage() {
             </div>
           </div>
 
-           {/* Add items V through X here... */}
+           {/* ITEM 5 */}
+           <div className="mb-12">
+            <h2 className="text-2xl font-bold text-white mb-4">V. The Blade of Precision (Swiss Army Knife)</h2>
+            <p className="mb-4">
+              Presuming that a man should be prepared for the vicissitudes of fortune, the Swiss Army Knife remains the quintessential tool of readiness. It is not merely a knife, but a compact arsenal of utility. To carry one is to carry confidence.
+            </p>
+            <div className="flex gap-2 text-xs font-mono text-gray-500 uppercase tracking-widest mt-4">
+                <span>Best For: The Adventurer</span> • <span>Est. Price: Rs. 12,000</span>
+            </div>
+          </div>
            
            <hr className="border-neutral-800 my-12" />
 
