@@ -9,26 +9,22 @@ const inter = Inter({ subsets: ["latin"] });
 
 // --- SEO CONFIGURATION (USA & Global Targeting) ---
 export const metadata: Metadata = {
-  // 1. The Title: This is what users see in Google Search results.
+  // 1. The Title
   title: {
     template: "%s | GiftLanka",
     default: "GiftLanka | #1 Gift Shop, Magazine & Gift Ideas",
   },
-  // 2. The Description: The text under the link in Google.
+  // 2. The Description
   description: "The ultimate Gift Magazine and Gift Shop. Discover trending gift ideas, viral USA products, and expert buyer's guides for 2025.",
   
-  // 3. Keywords: The Massive SEO List
+  // 3. Keywords
   keywords: [
-    // Original Keywords
     "gift shop usa", 
     "gift magazine", 
     "gift ideas 2025", 
     "online gift store", 
     "best gifts for men", 
     "best gifts for women",
-    
-    // USA & Delivery Keywords
-    "gift shop usa",
     "gift usa",
     "gift usa birthday",
     "gifts images",
@@ -61,6 +57,13 @@ export const metadata: Metadata = {
     "amazon us gift card",
     "gift card psn usa"
   ],
+
+  // ✅ THIS IS THE FIX FOR YOUR FAVICON
+  icons: {
+    icon: "/images/gold-logo.ico",      // Sets the tab icon
+    shortcut: "/images/gold-logo.ico",  // Sets the shortcut icon
+    apple: "/images/gold-logo.ico",     // Sets the icon for iPhone home screen
+  },
 
   // 4. Social Media Card
   openGraph: {
