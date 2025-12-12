@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 // Import your components
 import Navbar from "@/components/layout/Navbar";
@@ -105,6 +106,14 @@ export default function RootLayout({
 
         {/* 3. FOOTER */}
         <Footer />
+
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4674922607724436"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
 
       </body>
     </html>
