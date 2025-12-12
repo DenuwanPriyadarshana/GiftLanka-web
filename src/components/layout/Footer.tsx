@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-900 border-t border-neutral-800 text-gray-400 py-12">
       <div className="container mx-auto px-4">
-        
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* BRAND */}
           <div className="col-span-1 md:col-span-2">
@@ -54,10 +54,10 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="text-center mt-8 text-xs text-gray-600">
+        <div className="text-center mt-8 text-xs text-gray-600" suppressHydrationWarning>
           © {new Date().getFullYear()} GiftLanka. All rights reserved.
         </div>
-        
+
       </div>
     </footer>
   );

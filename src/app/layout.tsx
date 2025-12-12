@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 // --- SEO CONFIGURATION (USA & Global Targeting) ---
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+
   // 1. The Title
   title: {
     template: "%s | GiftLanka",
@@ -16,14 +18,14 @@ export const metadata: Metadata = {
   },
   // 2. The Description
   description: "The ultimate Gift Magazine and Gift Shop. Discover trending gift ideas, viral USA products, and expert buyer's guides for 2025.",
-  
+
   // 3. Keywords
   keywords: [
-    "gift shop usa", 
-    "gift magazine", 
-    "gift ideas 2025", 
-    "online gift store", 
-    "best gifts for men", 
+    "gift shop usa",
+    "gift magazine",
+    "gift ideas 2025",
+    "online gift store",
+    "best gifts for men",
     "best gifts for women",
     "gift usa",
     "gift usa birthday",
@@ -92,10 +94,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-neutral-950 antialiased selection:bg-yellow-500/30 selection:text-yellow-200`}>
-        
+
         {/* 1. NAVIGATION */}
         <Navbar />
-        
+
         {/* 2. MAIN CONTENT AREA */}
         <div className="flex-grow min-h-screen">
           {children}
