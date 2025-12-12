@@ -85,6 +85,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+
+  // 5. Other Meta Tags
+  other: {
+    "google-adsense-account": "ca-pub-4674922607724436",
+  },
 };
 
 export default function RootLayout({
@@ -94,6 +99,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4674922607724436"
+          crossOrigin="anonymous"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body className={`${inter.className} bg-neutral-950 antialiased selection:bg-yellow-500/30 selection:text-yellow-200`}>
 
         {/* 1. NAVIGATION */}
@@ -106,14 +120,6 @@ export default function RootLayout({
 
         {/* 3. FOOTER */}
         <Footer />
-
-        {/* Google AdSense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4674922607724436"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
 
       </body>
     </html>
